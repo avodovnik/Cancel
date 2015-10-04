@@ -1,0 +1,10 @@
+﻿@model Product[]
+
+<h3>Special Offer</h3>
+<dl>
+    @foreach(var product in Model)
+    {
+        <dt>@product.Name</dt>
+        <dd>@product.Price</dd>
+    }
+</dl>
